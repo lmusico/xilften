@@ -1,0 +1,5 @@
+<h1 class=" text-center">{{serieEscolhida.serie}} temporada {{serieEscolhida.temporada}}</h1>
+<div class="d-flex justify-content-center">
+<app-card class="col-sm-2" *ngFor="let ep of serieEscolhida.episodios" [episodio]="ep.episodio" [nome]="ep.nome" [serie]="serieEscolhida.serie"
+    [duracao]="ep.duracao" [thumbnail]="ep.thumbnail" [desc]="ep.desc"></app-card>
+</div>

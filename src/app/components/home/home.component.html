@@ -1,0 +1,4 @@
+<div class="row">
+<app-card class="d-flex justify-content-center col-sm mt-4" *ngFor="let ep of breakingBad.temporadas" [serie]="breakingBad.serie"
+    [desc]="'Temporada '+ep.temporada+' composta de '+ep.episodios+' episódios.'" [thumbnail]="ep.thumbnail" [rota]="'episodios/'+breakingBad.serieRota+'/'+ep.temporada"></app-card>
+</div>
